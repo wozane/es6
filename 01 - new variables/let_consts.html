@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>let and const</title>
+</head>
+<body>
+  <script>
+    const key = 'abc123';
+    let point = 50;
+    let winner = false;
+
+    if (point > 40) {
+      let winner = true; // this is let in block so not the same as let winner above
+    }
+
+    const person = {
+      name: 'Wes',
+      age: 28
+    }
+
+    const wes = Object.freeze(person);
+
+  </script>
+</body>
+</html>
