@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>arrow func example</title>
+</head>
+<body>
+  <script>
+
+    const race = '100m Dash';
+    const winners = ['Hunter Gath', 'Singa Song', 'Imda Bos'];
+
+    const win = winners.map((winner, i) => ({name: winner, race, place: i + 1})); // there should be race: race but we can avoid the first race and there must be i + 1 otherwise the place will start from 0
+
+    const ages = [23, 43, 533, 67, 65, 2, 42];
+
+    const old = ages.filter(age => age >= 60);
+    console.log(old);
+
+  </script>
+</body>
+</html>
